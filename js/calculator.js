@@ -25,7 +25,7 @@ function calcClick()
 		// total screen populated
 		if(totScrVal != "")
 		{
-			// replace E with (2.7)
+			// replace E with (2.7) 
 			if( (totScrVal.indexOf('E') >= 0)) {
 				totScrVal = totScrVal.replace(/E/g,'(2.718281828459045)');
 			}
