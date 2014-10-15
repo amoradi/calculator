@@ -2,6 +2,8 @@
 
 A simple calculator for your computing pleasure.
 
+[See Demo](http://aaronmoradi.com/work/simple-calculator-js/)
+
 ## License
 The MIT License (MIT)
 
