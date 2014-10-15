@@ -12,10 +12,10 @@ var buttons = document.getElementsByTagName('button'); // calculator buttons
 function calcClick()
 {
 
-	var	currentValue 	= this.value, 						// clicked button's value
-	    totalScreen 	= document.getElementById('total'), // total screen
-		totScrVal 		= totalScreen.value, 				// total screen value (string)
-		totScrArray 	= totScrVal.split(""); 
+	var	currentValue	= this.value, 						// clicked button's value
+	    totalScreen		= document.getElementById('total'), // total screen
+		totScrVal		= totalScreen.value, 				// total screen value (string)
+		totScrArray		= totScrVal.split(""); 
 
 	/*----------------*/
 	/*- Click Equals -*/ 
