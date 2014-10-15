@@ -12,9 +12,9 @@ var buttons = document.getElementsByTagName('button'); // calculator buttons
 function calcClick()
 {
 
-	var	currentValue	= this.value, 						// clicked button's value
-	    totalScreen		= document.getElementById('total'), // total screen
-		totScrVal		= totalScreen.value, 				// total screen value (string)
+	var	currentValue		= this.value, 				// clicked button's value
+	    	totalScreen		= document.getElementById('total'), 	// total screen
+		totScrVal		= totalScreen.value, 			// total screen value (string)
 		totScrArray		= totScrVal.split(""); 
 
 	/*----------------*/
@@ -54,9 +54,9 @@ function calcClick()
 	else if (currentValue == "delete")
 	{
 		var totScrArr 			= totalScreen.value,
-			totScrArr 			= totScrArr.split(""),
-			last 				= totScrArr.splice(-1, 1),
-			totScrArr 			= totScrArr.join("");
+			totScrArr 		= totScrArr.split(""),
+			last 			= totScrArr.splice(-1, 1),
+			totScrArr 		= totScrArr.join("");
 			totalScreen.value 	= totScrArr;
 	}
 
