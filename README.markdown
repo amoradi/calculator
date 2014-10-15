@@ -1,4 +1,6 @@
+# Simple Calculator JS
 
+A simple calculator for your computing pleasure.
 
 ## License
 The MIT License (MIT)
