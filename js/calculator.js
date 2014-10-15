@@ -87,7 +87,7 @@ function calcClick()
 /*---------------------------------*/
 /*- Add Event Listener to Buttons -*/ 
 /*---------------------------------*/
-if (addEventListener) // non-IE, IE 9 +
+if (addEventListener) // non-IE, IE 9+ 
 {
 	for (var i=0; i < buttons.length; i++) 
 	{
