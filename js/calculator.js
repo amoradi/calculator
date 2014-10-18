@@ -28,7 +28,12 @@ function calcClick()
 			// replace E with (2.7) 
 			if( (totScrVal.indexOf('E') >= 0))
 			{
+<<<<<<< HEAD
 				totScrVal = totScrVal.replace(/E/gi,'(E)');
+=======
+				totScrVal = totScrVal.replace(/E/gi,'(2.718281828459045)');
+				alert(totalScreen.value);
+>>>>>>> 7ff363b843f60f2313d33b3c2f12cdb5d43bcb3c
 			}
 			// replace PI with (PI)
 			if( (totScrVal.indexOf('PI') >= 0))
