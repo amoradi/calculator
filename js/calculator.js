@@ -12,10 +12,10 @@ var buttons = document.getElementsByTagName('button'); // calculator buttons
 function calcClick()
 {
 
-	var	currentValue 	= this.value, 						// clicked button's value
-	    totalScreen 	= document.getElementById('total'), // total screen
-		totScrVal 		= totalScreen.value, 				// total screen value (string)
-		totScrArray 	= totScrVal.split(""); 
+	var	currentValue		= this.value, 				// clicked button's value
+	    	totalScreen		= document.getElementById('total'), 	// total screen
+		totScrVal		= totalScreen.value, 			// total screen value (string)
+		totScrArray		= totScrVal.split(""); 
 
 	/*----------------*/
 	/*- Click Equals -*/ 
@@ -25,13 +25,16 @@ function calcClick()
 		// total screen populated
 		if(totScrVal != "")
 		{
-			// replace E with (2.7)
-			if( (totScrVal.indexOf('E') >= 0)) {
-				totScrVal = totScrVal.replace(/E/g,'(2.718281828459045)');
+			// replace E with (2.7) 
+			if( (totScrVal.indexOf('E') >= 0))
+			{
+				totScrVal = totScrVal.replace(/E/gi,'(2.718281828459045)');
+				alert(totalScreen.value);
 			}
 			// replace PI with (PI)
-			if( (totScrVal.indexOf('PI') >= 0)) {
-				totScrVal = totScrVal.replace(/PI/g,'(PI)');
+			if( (totScrVal.indexOf('PI') >= 0))
+			{
+				totScrVal = totScrVal.replace(/PI/gi,'(PI)');
 			} 
 			// if has sqrt sign replace with sprt
 			if( (totScrVal.indexOf('\u221A') >= 0) && (totScrVal.length > 3) && ((totScrVal.charAt((totScrVal.length)-1)) == ')' ) )
@@ -54,9 +57,9 @@ function calcClick()
 	else if (currentValue == "delete")
 	{
 		var totScrArr 			= totalScreen.value,
-			totScrArr 			= totScrArr.split(""),
-			last 				= totScrArr.splice(-1, 1),
-			totScrArr 			= totScrArr.join("");
+			totScrArr 		= totScrArr.split(""),
+			last 			= totScrArr.splice(-1, 1),
+			totScrArr 		= totScrArr.join("");
 			totalScreen.value 	= totScrArr;
 	}
 
@@ -87,7 +90,7 @@ function calcClick()
 /*---------------------------------*/
 /*- Add Event Listener to Buttons -*/ 
 /*---------------------------------*/
-if (addEventListener) // non-IE, IE 9 +
+if (addEventListener) // non-IE, IE 9+ 
 {
 	for (var i=0; i < buttons.length; i++) 
 	{
