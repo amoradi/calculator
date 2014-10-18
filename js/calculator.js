@@ -26,12 +26,15 @@ function calcClick()
 		if(totScrVal != "")
 		{
 			// replace E with (2.7) 
-			if( (totScrVal.indexOf('E') >= 0)) {
-				totScrVal = totScrVal.replace(/E/g,'(2.718281828459045)');
+			if( (totScrVal.indexOf('E') >= 0))
+			{
+				totScrVal = totScrVal.replace(/E/gi,'(2.718281828459045)');
+				alert(totalScreen.value);
 			}
 			// replace PI with (PI)
-			if( (totScrVal.indexOf('PI') >= 0)) {
-				totScrVal = totScrVal.replace(/PI/g,'(PI)');
+			if( (totScrVal.indexOf('PI') >= 0))
+			{
+				totScrVal = totScrVal.replace(/PI/gi,'(PI)');
 			} 
 			// if has sqrt sign replace with sprt
 			if( (totScrVal.indexOf('\u221A') >= 0) && (totScrVal.length > 3) && ((totScrVal.charAt((totScrVal.length)-1)) == ')' ) )
