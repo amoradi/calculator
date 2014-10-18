@@ -28,19 +28,14 @@ function calcClick()
 			// replace E with (2.7) 
 			if( (totScrVal.indexOf('E') >= 0))
 			{
-<<<<<<< HEAD
 				totScrVal = totScrVal.replace(/E/gi,'(E)');
-=======
-				totScrVal = totScrVal.replace(/E/gi,'(2.718281828459045)');
-				alert(totalScreen.value);
->>>>>>> 7ff363b843f60f2313d33b3c2f12cdb5d43bcb3c
 			}
 			// replace PI with (PI)
 			if( (totScrVal.indexOf('PI') >= 0))
 			{
 				totScrVal = totScrVal.replace(/PI/gi,'(PI)');
 			} 
-			// if has sqrt sign replace with sprt
+			// if has ^ sign replace with sqrt
 			if( (totScrVal.indexOf('\u221A') >= 0) && (totScrVal.length > 3) && ((totScrVal.charAt((totScrVal.length)-1)) == ')' ) )
 			{
 				totScrVal = totScrVal.replace(/\u221A/g,'sqrt');
