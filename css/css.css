@@ -40,6 +40,16 @@ button {
 	border-radius: 4px;
 	font-size: 15px;
 	color: #222;
+		-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+	         -webkit-transition: background-color 200ms ease-out ;
+    -moz-transition: background-color 200ms ease-out ;
+    -o-transition: background-color 200ms ease-out ;
+    transition: background-color 200ms ease-out ;
+}
+button:hover {
+	background: #ddd;
 }
 input[type="text"] {
 	display: block;
@@ -66,7 +76,11 @@ button#clear {
 	margin-top: 20px;
 	font-size: 16px;
 	letter-spacing: 1px;
-
+}
+button#clear:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background: #d06745;
 }
 button#equals {
 	/*height: 101px;*/
@@ -74,9 +88,18 @@ button#equals {
 	color: #fff;
 	font-size: 36px;
 	width: 206%;
-
+	height: 101px;
+}
+button#equals:hover {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background: #438abf;
 }
 .clear {
 	clear: both;
 	display: block;
+}
+*:focus {
+  outline-color: transparent;
+  outline-style: none;
 }
